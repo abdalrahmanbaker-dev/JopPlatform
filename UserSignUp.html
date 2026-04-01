@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Doroop - Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div
+        class="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-5xl w-full flex flex-col md:flex-row min-h-[600px]">
+
+
+
+        <div class="w-full md:w-7/12 p-3 md:p-10 bg-white text-right" dir="ltr">
+    <div class="flex flex-col items-center mb-6 gap-1">
+        <img src="src/5.png" alt="Doroop Logo" class="w-1/3">
+        <h2 class="text-3xl font-extrabold text-indigo-950 mt-4 mb-3">Sign Up</h2>
+        <p class="text-gray-500 text-sm">Create your account to get started</p>
+    </div>
+
+    <form class="space-y-3" method="POST">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+                <label for="firstName" class="block text-sm text-start font-semibold text-gray-700 mb-1 px-3">First Name</label>
+                <input type="text" id="firstName" name="FirstName" placeholder="First Name"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition">
+            </div>
+            <div>
+                <label for="lastName" class="block text-sm text-start font-semibold text-gray-700 mb-1 px-3">Last Name</label>
+                <input type="text" id="lastName" name="LastName" placeholder="Last Name"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition">
+            </div>
+        </div>
+
+        <div>
+            <label for="email" class="block text-sm text-start font-semibold text-gray-700 mb-1 px-3">Email Address</label>
+            <input type="email" id="email" name="Email" placeholder="name@example.com"
+                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition">
+        </div>
+
+        <div>
+            <label for="password" class="block text-sm text-start font-semibold text-gray-700 mb-1 px-3">Password</label>
+            <input type="password" id="password" name="Password" placeholder="******** "autocomplete="new-password"
+                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition">
+        </div>
+        
+        <div>
+            <label for="confirmPassword" class="block text-sm text-start font-semibold text-gray-700 mb-1 px-3">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="ConfirmPassword" placeholder="********"
+                class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+                <label for="phone" class="block text-sm text-start font-semibold text-gray-700 mb-1 px-3">Phone number</label>
+                <input type="tel" id="phone" name="PhoneNumber" placeholder="077*******"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition">
+            </div>
+            <div>
+                <label for="location" class="block text-sm text-start font-semibold text-gray-700 mb-1 px-3">Location</label>
+                <input type="text" id="location" name="Location" placeholder="Jordan-Amman"
+                    class="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition">
+            </div>
+        </div>
+
+        <button type="submit"
+            class="w-full bg-indigo-950 hover:bg-indigo-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-indigo-200 transform transition active:scale-95 mt-8">
+            Sign Up
+        </button>
+    </form>
+
+    <p class="text-center text-sm text-gray-500 mt-6">
+        Already have an account? <a href="UserLogin.html" class="text-indigo-600 font-semibold hover:underline">Log in</a>
+    </p>
+</div>
+       <div class="hidden md:flex relative w-full md:w-5/12 bg-indigo-900 text-white p-8 flex-col justify-end overflow-hidden">
+    
+    <img src="src/pexels-benjamin-adjei-abayie-2158492422-36659831.jpg" alt="Background"
+         class="absolute inset-0 w-full h-full object-cover opacity-60">
+    
+    <div class="absolute inset-0 bg-gradient-to-t from-indigo-950 via-transparent to-transparent"></div>
+
+    <div class="relative z-10 text-left">
+        <h1 class="text-4xl font-bold leading-tight">Your skills deserve <br>
+            <span class="text-indigo-400">the best opportunities</span>
+        </h1>
+        <p class="mt-4 text-gray-200 text-sm leading-relaxed">
+            Your next career milestone is waiting for you. Log in to see who’s looking for your skills today.
+        </p>
+        <div class="flex gap-2 mt-6">
+            <span class="w-8 h-1.5 bg-indigo-500 rounded-full"></span>
+            <span class="w-3 h-1.5 bg-gray-500 rounded-full"></span>
+            <span class="w-3 h-1.5 bg-gray-500 rounded-full"></span>
+        </div>
+    </div>
+</div>
+    </div>
+
+</body>
+
+</html>

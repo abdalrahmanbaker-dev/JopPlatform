@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Css</title>
+</head>
+
+<body class="bg-gray-100 overflow-x-hidden pt-16  ">
+    <nav
+        class="z-50 flex items-center justify-between  py-0.5 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-slate-800 text-sm fixed top-0 w-full">
+        <a href="laddingPage.html">
+            <img src="src/3.png" alt="" class="w-20">
+        </a>
+
+        <div class="hidden md:flex items-center gap-10 transition duration-500">
+            <a href="/" class="hover:text-slate-500 text-md lg:text-lg font-semibold transition">
+                Home
+            </a>
+            <a href="Jops.html" class="hover:text-slate-500 text-md lg:text-lg font-semibold transition">
+                Jobs
+            </a>
+            <a href="/stories" class="hover:text-slate-500 text-md lg:text-lg font-semibold  transition">
+                My Applications
+            </a>
+            <a href="/pricing" class="hover:text-slate-500 text-md lg:text-lg  font-semibold transition">
+                saved jobs
+            </a>
+        </div>
+
+        <div class="hidden md:block space-x-3">
+            <button class="px-3 lg:px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md">
+                <a href="ChoseAccountType.html">Get Started</a>
+            </button>
+            <button class="hover:bg-slate-100 transition px-3 lg:px-6 py-2  border border-indigo-600 rounded-md">
+                <a href="UserLogin.html">Login</a>
+            </button>
+        </div>
+        <button id="open-menu" class="md:hidden active:scale-90 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </button>
+    </nav>
+    <div id="mobile-navLinks"
+        class="fixed inset-0 z-[100] bg-white/60 text-slate-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 -translate-x-full">
+        <a href="/">
+            Home
+        </a>
+        <a href="/products">
+            Products
+        </a>
+        <a href="/stories">
+            Stories
+        </a>
+        <a href="/pricing">
+            Pricing
+        </a>
+        <button id="close-menu"
+            class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-slate-100 hover:bg-slate-200 transition text-black rounded-md flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-x-icon lucide-x">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <!--  الصفحة كاملة بداية-->
+    <div class="grid grid-cols-1 gap-5 mx-10 md:grid-cols-3 my-10 lg:grid-cols-12">
+
+
+        <!-- العمود الأوسط بداية -->
+        <div class="col-span-9 bg-white border-1 rounded-md m-2  gap-4 p-4 shadow-lg shadow-gray-500 mx-auto w-full">
+            <!-- بداية ال ملف الشخصي -->
+            <div class="w-full  rounded-2xl border-2 border-gray-500 shadow-gray-600 overflow-hidden group">
+
+                <!-- cover image begin -->
+                <div class="h-32 w-full bg-indigo-950 relative">
+                    <div
+                        class="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
+                    </div>
+                </div>
+                <!-- cover image end -->
+
+                <!-- profile image begin -->
+                <div class="relative flex justify-center -mt-12">
+                    <img src="src/Abood.png" alt="Profile"
+                        class="w-24 h-24 rounded-full border-4 border-white shadow-md object-cover transition-transform group-hover:scale-105 duration-300"
+                        onerror="this.src='https://ui-avatars.com/api/?name=Abdalrahman+Baker&background=1e1b4b&color=fff'">
+                </div>
+                <!-- profile image end -->
+
+
+                <!-- personal information begin -->
+                <div class=" flex flex-col justify-center items-center text-center px-6 py-4">
+                    <h2 class="text-xl font-extrabold text-indigo-950 tracking-tight">Abdalrahman Baker</h2>
+                    <p class="text-indigo-600 font-semibold text-sm">.Net Developer</p>
+                    <div class="flex flex-col lg:flex-row justify-between items-center gap-10 px-5 my-5 w-full">
+                        <p class="text-gray-600 font-semibold text-xl ">contact info :</p>
+
+                        <a href="" class="text-indigo-500 text-lg">aboodbaker044@gmail.com</a>
+                        <p class="text-indigo-500 text-lg">0781458386</p>
+                        <p class="text-indigo-500 text-lg">ِAmman</p>
+                    </div>
+
+
+                    <div>
+
+                    </div>
+
+                              
+
+                    <p class="mt-3 text-gray-500 text-sm leading-relaxed line-clamp-3">
+                        Passionate software engineer focused on building scalable web applications using .Net Core and
+                        modern frontend technologies.
+                    </p>
+                    <p class="mt-3 text-gray-500 text-sm leading-relaxed line-clamp-3">
+                        Passionate software engineer focused on building scalable web applications using .Net Core and
+                        modern frontend technologies.
+                    </p>
+                    <p class="mt-3 text-gray-500 text-sm leading-relaxed line-clamp-3">
+                        Passionate software engineer focused on building scalable web applications using .Net Core and
+                        modern frontend technologies.
+                    </p>
+                </div>
+                <!-- personal information end -->
+
+
+                <div class="flex border-t border-gray-50 bg-gray-50/50">
+                    <div class="flex-1 text-center py-4 border-r border-gray-100">
+                        <span class="block text-xl font-bold text-indigo-950">124</span>
+                        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Posts</span>
+                    </div>
+                    <div class="flex-1 text-center py-4">
+                        <span class="block text-xl font-bold text-indigo-950">850</span>
+                        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Friends</span>
+                    </div>
+                </div>
+                <!-- skills section begin -->
+                <div class="px-6 py-4 w-full">
+                    <!-- skills header begin -->
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-lg font-bold uppercase tracking-widest text-gray-400">Top Skills</h3>
+                        <button class="text-indigo-950 hover:text-indigo-600 transition-colors">
+                            <i class="fa-solid fa-circle-plus text-xl"></i>
+                        </button>
+                    </div>
+                    <!-- skills header end -->
+
+
+                    <!-- skills begin -->
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-7 py-3 bg-indigo-50 text-indigo-700 text-[11px] font-bold rounded-full border border-indigo-100 hover:bg-indigo-100 transition-colors cursor-default">
+                            C# / .NET
+                        </span>
+                        <span
+                            class="px-7 py-3 bg-indigo-50 text-indigo-700 text-[11px] font-bold rounded-full border border-indigo-100 hover:bg-indigo-100 transition-colors cursor-default">
+                            EF Core
+                        </span>
+                        <span
+                            class="px-7 py-3 bg-indigo-50 text-indigo-700 text-[11px] font-bold rounded-full border border-indigo-100 hover:bg-indigo-100 transition-colors cursor-default">
+                            SQL Server
+                        </span>
+                        <span
+                            class="px-7 py-3 bg-indigo-50 text-indigo-700 text-[11px] font-bold rounded-full border border-indigo-100 hover:bg-indigo-100 transition-colors cursor-default">
+                            Tailwind CSS
+                        </span>
+                        <span
+                            class="px-7 py-3 bg-indigo-50 text-indigo-700 text-[11px] font-bold rounded-full border border-indigo-100 hover:bg-indigo-100 transition-colors cursor-default">
+                            LINQ
+                        </span>
+                    </div>
+                    <!-- skills end -->
+
+                </div>
+                <!-- skils section end -->
+
+
+                <div class="p-4">
+                    <a href="/profile"
+                        class="block w-full text-center bg-indigo-950 text-white py-2.5 rounded-xl font-bold text-sm shadow-md hover:bg-indigo-900 hover:shadow-indigo-200 transition-all active:scale-[0.98]">
+                        View Full Profile
+                    </a>
+                </div>
+                <!-- Post begin -->
+                <div class="  w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
+
+                    <div class="flex items-center px-4 py-3">
+                        <div class="h-12 w-12 rounded-full overflow-hidden border border-gray-100 shrink-0">
+                            <img class="h-full w-full object-cover"
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="User Profile">
+                        </div>
+
+                        <div class="ml-3">
+                            <h3 class="text-sm font-bold text-gray-900 leading-tight">عبد الرحمن بكر</h3>
+                            <div class="flex items-center text-xs text-gray-500 mt-0.5">
+                                <span>30 مارس 2026</span>
+                                <span class="mx-1.5">•</span>
+                                <svg class="h-3 w-3 fill-current" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 100 16A8 8 0 008 0zM4.5 7.5a.5.5 0 01.5-.5h6a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <button
+                            class="ml-auto text-indigo-950 hover:text-white  hover:bg-indigo-950  text-xl   p-1.5 rounded-full transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="px-4 pb-3">
+                        <p class="text-gray-800 text-sm leading-relaxed">
+                            سعيد جداً بمشاركتكم تطورات مشروعي الأخير! تم بناء هذه الواجهة باستخدام <span
+                                class="text-blue-600 font-semibold">#TailwindCSS</span> لتحقيق أقصى درجات المرونة
+                            والسرعة في
+                            التصميم. ما رأيكم في التناسق اللوني؟ 🚀💻
+                        </p>
+                    </div>
+
+                    <div
+                        class="px-4 py-2 border-b border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <div class="flex items-center space-x-1">
+                            <span class="bg-blue-500 text-white p-1 rounded-full"><svg class="w-2.5 h-2.5"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z">
+                                    </path>
+                                </svg></span>
+                            <span class="pl-1">124 Like</span>
+                        </div>
+                        <div>
+                            <span class="hover:underline cursor-pointer">18 تعليق</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center px-2 py-1">
+                        <button
+                            class="flex-1 flex items-center justify-center space-x-2 hover:bg-gray-100 py-2 rounded-lg text-gray-600 transition font-medium text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                            </svg>
+                            <span>Like</span>
+                        </button>
+
+                        <button
+                            class="flex-1 flex items-center justify-center space-x-2 hover:bg-gray-100 py-2 rounded-lg text-gray-600 transition font-medium text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Post end -->
+                  <!-- Post begin -->
+                <div class=" w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
+
+                    <div class="flex items-center px-4 py-3">
+                        <div class="h-12 w-12 rounded-full overflow-hidden border border-gray-100 shrink-0">
+                            <img class="h-full w-full object-cover"
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="User Profile">
+                        </div>
+
+                        <div class="ml-3">
+                            <h3 class="text-sm font-bold text-gray-900 leading-tight">عبد الرحمن بكر</h3>
+                            <div class="flex items-center text-xs text-gray-500 mt-0.5">
+                                <span>30 مارس 2026</span>
+                                <span class="mx-1.5">•</span>
+                                <svg class="h-3 w-3 fill-current" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 100 16A8 8 0 008 0zM4.5 7.5a.5.5 0 01.5-.5h6a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <button
+                            class="ml-auto text-indigo-950 hover:text-white  hover:bg-indigo-950  text-xl   p-1.5 rounded-full transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="px-4 pb-3">
+                        <p class="text-gray-800 text-sm leading-relaxed">
+                            سعيد جداً بمشاركتكم تطورات مشروعي الأخير! تم بناء هذه الواجهة باستخدام <span
+                                class="text-blue-600 font-semibold">#TailwindCSS</span> لتحقيق أقصى درجات المرونة
+                            والسرعة في
+                            التصميم. ما رأيكم في التناسق اللوني؟ 🚀💻
+                        </p>
+                    </div>
+
+                    <div
+                        class="px-4 py-2 border-b border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <div class="flex items-center space-x-1">
+                            <span class="bg-blue-500 text-white p-1 rounded-full"><svg class="w-2.5 h-2.5"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z">
+                                    </path>
+                                </svg></span>
+                            <span class="pl-1">124 Like</span>
+                        </div>
+                        <div>
+                            <span class="hover:underline cursor-pointer">18 تعليق</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center px-2 py-1">
+                        <button
+                            class="flex-1 flex items-center justify-center space-x-2 hover:bg-gray-100 py-2 rounded-lg text-gray-600 transition font-medium text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                            </svg>
+                            <span>Like</span>
+                        </button>
+
+                        <button
+                            class="flex-1 flex items-center justify-center space-x-2 hover:bg-gray-100 py-2 rounded-lg text-gray-600 transition font-medium text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Post end -->
+                  <!-- Post begin -->
+                <div class="w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
+
+                    <div class="flex items-center px-4 py-3">
+                        <div class="h-12 w-12 rounded-full overflow-hidden border border-gray-100 shrink-0">
+                            <img class="h-full w-full object-cover"
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="User Profile">
+                        </div>
+
+                        <div class="ml-3">
+                            <h3 class="text-sm font-bold text-gray-900 leading-tight">عبد الرحمن بكر</h3>
+                            <div class="flex items-center text-xs text-gray-500 mt-0.5">
+                                <span>30 مارس 2026</span>
+                                <span class="mx-1.5">•</span>
+                                <svg class="h-3 w-3 fill-current" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 100 16A8 8 0 008 0zM4.5 7.5a.5.5 0 01.5-.5h6a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <button
+                            class="ml-auto text-indigo-950 hover:text-white  hover:bg-indigo-950  text-xl   p-1.5 rounded-full transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="px-4 pb-3">
+                        <p class="text-gray-800 text-sm leading-relaxed">
+                            سعيد جداً بمشاركتكم تطورات مشروعي الأخير! تم بناء هذه الواجهة باستخدام <span
+                                class="text-blue-600 font-semibold">#TailwindCSS</span> لتحقيق أقصى درجات المرونة
+                            والسرعة في
+                            التصميم. ما رأيكم في التناسق اللوني؟ 🚀💻
+                        </p>
+                    </div>
+
+                    <div
+                        class="px-4 py-2 border-b border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <div class="flex items-center space-x-1">
+                            <span class="bg-blue-500 text-white p-1 rounded-full"><svg class="w-2.5 h-2.5"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z">
+                                    </path>
+                                </svg></span>
+                            <span class="pl-1">124 Like</span>
+                        </div>
+                        <div>
+                            <span class="hover:underline cursor-pointer">18 تعليق</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center px-2 py-1">
+                        <button
+                            class="flex-1 flex items-center justify-center space-x-2 hover:bg-gray-100 py-2 rounded-lg text-gray-600 transition font-medium text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                            </svg>
+                            <span>Like</span>
+                        </button>
+
+                        <button
+                            class="flex-1 flex items-center justify-center space-x-2 hover:bg-gray-100 py-2 rounded-lg text-gray-600 transition font-medium text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Post end -->
+                 <!-- Post begin -->
+                <div class=" w-full lg:w-5/6 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
+
+                    <div class="flex items-center px-4 py-3">
+                        <div class="h-12 w-12 rounded-full overflow-hidden border border-gray-100 shrink-0">
+                            <img class="h-full w-full object-cover" src="src/Abood.png" alt="User Profile">
+                        </div>
+
+                        <div class="ml-3">
+                            <h3 class="text-sm font-bold text-gray-900 leading-tight">Abdalrahman baker</h3>
+                            <div class="flex items-center text-xs text-gray-500 mt-0.5">
+                                <span>30 مارس 2026</span>
+                                <span class="mx-1.5">•</span>
+                                <svg class="h-3 w-3 fill-current" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 100 16A8 8 0 008 0zM4.5 7.5a.5.5 0 01.5-.5h6a.5.5 0 010 1H5a.5.5 0 01-.5-.5z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <button
+                            class="ml-auto text-indigo-950 hover:text-white  hover:bg-indigo-950  text-xl   p-1.5 rounded-full transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="px-4 pb-3">
+                        <p class="text-gray-800 text-sm leading-relaxed">
+
+                            abood baker this is my name and my age is 20 years old
+                            and my major is software engineering
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-100">
+                        <img class="w-full h-auto object-cover max-h-[500px]"
+                            src="src/pexels-benjamin-adjei-abayie-2158492422-36659831.jpg"
+                            alt="Post Content Image">
+                    </div>
+
+                    <div
+                        class="px-4 py-2 border-b border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <div class="flex items-center space-x-1">
+                            <span class="bg-blue-500 text-white p-1 rounded-full"><svg class="w-2.5 h-2.5"
+                                    fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z">
+                                    </path>
+                                </svg></span>
+                            <span class="pl-1">124 Like</span>
+                        </div>
+                        <div>
+                            <span class="hover:underline cursor-pointer">18 تعليق</span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center px-2 py-1">
+                        <button
+                            class="flex-1 flex items-center justify-center space-x-2 hover:bg-gray-100 py-2 rounded-lg text-gray-600 transition font-medium text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                            </svg>
+                            <span>Like</span>
+                        </button>
+
+                        <button
+                            class="flex-1 flex items-center justify-center space-x-2 hover:bg-gray-100 py-2 rounded-lg text-gray-600 transition font-medium text-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                            <span>Comment</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Post end -->
+                 
+            </div>
+            <!-- نهاية ال ملف الشخصي -->
+
+        </div>
+        <!-- العمود الأوسط نهاية -->
+
+
+
+
+        <div
+            class="    col-span-3 bg-white  w-full my-2  rounded-md  hidden shadow-lg shadow-gray-500  md:hidden lg:block">
+
+            <div class="flex flex-col justify-center items-center gap-4 p-2 ">
+
+                <h1 class="text-2xl font-bold text-indigo-950">Suggested for You</h1>
+
+
+
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+                <!-- card bdgin -->
+                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-start items-center ">
+                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
+                                <p class="text-left text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <!-- card end -->
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- الصفحة كاملة نهاية -->
+
+    <!-- open mobile menue begin-->
+    <script>
+        const openMenu = document.getElementById("open-menu");
+        const closeMenu = document.getElementById("close-menu");
+        const navLinks = document.getElementById("mobile-navLinks");
+
+        const openMenuHandler = () => {
+            navLinks.classList.remove("-translate-x-full")
+            navLinks.classList.add("translate-x-0")
+        }
+
+        const closeMenuHandler = () => {
+            navLinks.classList.remove("translate-x-0")
+            navLinks.classList.add("-translate-x-full")
+        }
+
+        openMenu.addEventListener("click", openMenuHandler);
+        closeMenu.addEventListener("click", closeMenuHandler);
+    </script>
+    <!-- open mobile menue end-->
+
+</body>
+
+</html>

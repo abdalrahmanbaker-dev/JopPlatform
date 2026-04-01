@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
+    <title>Css</title>
+</head>
+
+<body class="bg-gray-100 overflow-x-hidden pt-16  ">
+    <!-- Navigation bar begin -->
+    <nav
+        class="z-50 flex items-center justify-between  py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-slate-800 text-sm fixed top-0 w-full">
+
+        <!-- logo -->
+        <a href="laddingPage.html">
+            <img src="src/5.png" alt="" class="w-20">
+        </a>
+        <!-- logo -->
+
+        <!-- main links -->
+        <div class="hidden md:flex items-center gap-10 transition duration-500">
+            <a href="index.html" class="hover:text-slate-500 text-md lg:text-lg font-semibold transition">
+                Home
+            </a>
+            <a href="Jops.html" class="hover:text-slate-500 text-md lg:text-lg font-semibold transition">
+                Jobs
+            </a>
+            <a href="/stories" class="hover:text-slate-500 text-md lg:text-lg font-semibold  transition">
+                My Applications
+            </a>
+            <a href="/pricing" class="hover:text-slate-500 text-md lg:text-lg  font-semibold transition">
+                saved jobs
+            </a>
+        </div>
+        <!-- main links -->
+
+        <!-- login and signup buttons begin -->
+        <div class="hidden md:block space-x-3">
+
+            <!-- signUp buttons -->
+            <a href="UserSignUp.html"
+                class="px-3 lg:px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md">
+                Get Started
+            </a>
+            <!-- signUp buttons -->
+
+            <!-- login button -->
+            <a href="UserLogin.html"
+                class="hover:bg-slate-100 transition px-3 lg:px-6 py-2  border border-indigo-600 rounded-md">
+                Login
+            </a>
+            <!-- login button -->
+
+        </div>
+        <!-- login and signup buttons end -->
+
+        <!-- mobile menue button -->
+        <button id="open-menu" class="md:hidden active:scale-90 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </button>
+        <!-- mobile menue button -->
+
+    </nav>
+    <!-- Navigation bar end -->
+
+    <!-- mobile navbar -->
+    <div id="mobile-navLinks"
+        class="fixed inset-0 z-[100] bg-white/60 text-indigo-950 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 -translate-x-full">
+
+        <!-- main links -->
+        <a href="index.html">
+            Home
+        </a>
+        <a href="Jops.html">
+            Jobs
+        </a>
+        <a href="/products">
+            My Application
+        </a>
+        <a href="/products">
+            Saved
+        </a>
+        <!-- main links -->
+
+        <!-- زر اغلاق ال navbar -->
+        <button id="close-menu"
+            class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center  hover:bg-slate-200 transition text-black rounded-md flex">
+            <i class="fa-solid fa-x text-indigo-950"></i>
+        </button>
+        <!-- زر اغلاق ال navbar -->
+
+    </div>
+    <!-- mobile navbar -->
+
+    <!--  الصفحة كاملة بداية-->
+      
+    <div class="grid grid-cols-1 gap-5 mx-10 md:grid-cols-3 my-10 lg:grid-cols-12">
+        <!-- العمود اليسار بداية -->
+        <div class="col-span-3 hidden lg:block bg-gray-100 w-full  sticky top-20 h-fit ">
+
+            <!-- profile card begin -->
+            <div
+                class="flex flex-col justify-center items-center mx-auto my-2 w-full p-5 bg-white rounded-lg shadow-lg  border border-gray-100 shadow-gray-500 ">
+
+                <!-- صورة الغلاف -->
+                <a href="profilePage.html"><img src="src/Abood.png" alt="profile" class="w-16 h-16 rounded-full "></a>
+                <!-- صورة الغلاف -->
+
+                <!-- user Name -->
+                <h1 class="text-2xl font-extrabold ">AbdAlrahman Baker</h1>
+                <!-- user Name -->
+
+                <!-- user headline -->
+                <p class="text-gray-600">.net Developer</p>
+                <!-- user headline -->
+
+                <!-- veiw profile button -->
+                <button
+                    class="bg-indigo-950 rounded-full text-white w-full p-1 my-2 hover:bg-green-300 hover:text-indigo-950 hover:-translate-y-0.5 hover:transition-all hover:duration-300 ">
+                    <a href="profilePage.html">ViewProfile</a>
+                </button>
+                <!-- veiw profile button -->
+
+            </div>
+            <!-- profile card end -->
+
+
+            <!-- side bar begin -->
+            <div
+                class="flex flex-col gap-6 justify-between items-start mx-auto my-5 w-full p-2 bg-white  rounded-lg   border border-gray-100 shadow-lg shadow-gray-500">
+                <a href="#" class="flex justify-center items-center gap-3 ">
+                    <i class="fa-solid fa-house text-indigo-950"></i>
+                    <p> Home</p>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-3 ">
+                    <i class="fa-solid fa-briefcase text-indigo-950"></i>
+                    <p> Jops</p>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-3 ">
+                    <i class="fa-solid fa-user-tie text-indigo-950"></i>
+                    <p> My Applications</p>
+                </a>
+                <a href="#" class="flex justify-center items-center gap-3 ">
+                    <i class="fa-solid fa-bookmark text-indigo-950"></i>
+                    <p> Saved Jops</p>
+                </a>
+
+            </div>
+            <!-- side bar end -->
+
+        </div>
+        <!-- العمود اليسار نهاية -->
+
+        <!-- العمود الأوسط بداية -->
+        <div class="col-span-6 bg-white border-1 rounded-md m-2  gap-4 p-4 shadow-lg shadow-gray-500 mx-auto w-full">
+
+            <!-- flexbox بحتوي كل عناصر ال عمود الأوسط  -->
+            <div class="flex flex-col justify-center items-center gap-3">
+
+                <!-- بداية كرت الوظيفة -->
+                <div class="w-full border border-gray-200 p-4 rounded-xl mx-2 max-w-2xl">
+
+                    <!-- header of jop card -->
+                    <div class="flex  items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                        <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-1">
+                                <img src="src/googleLogo.png" alt="" class="w-14">
+                            </div>
+                            <div>
+
+                                <!-- مسمى الوظيفي -->
+                                <h3 class="text-base font-bold text-indigo-950">Sr. Software engineer</h3>
+                                <!-- مسمى الوظيفي -->
+
+                                <!-- اسم الشركة -->
+                                <span>Google</span>
+                                <!-- اسم الشركة -->
+
+                            </div>
+                        </div>
+                        
+                        <!-- تاريخ النشر -->
+                        <span>Jan 2024 - Present</span>
+                        <!-- تاريخ النشر -->
+
+                    </div>
+                    <!-- header of jop card -->
+
+                    <!-- job information -->
+                    <div class="flex  justify-around items-center pt-10">
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <p>1000</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Remotly</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <p>fresh</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Jordan</p>
+                        </div>
+                    </div>
+                    <!-- job information -->
+
+                    <!-- Buttons -->
+                    <div class="flex justify-center items-center w-full  gap-3">
+                        <button
+                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Save
+                        </button>
+                        <button
+                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Application now
+                        </button>
+
+                    </div>
+                    <!-- Buttons -->
+                </div>
+                <!-- نهاية كرت الوظيفة -->
+
+                <!-- بداية كرت الوظيفة -->
+                <div class="w-full border border-gray-200 p-4 rounded-xl mx-2 max-w-2xl">
+
+                    <!-- header of jop card -->
+                    <div class="flex  items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                        <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-1">
+                                <img src="src/googleLogo.png" alt="" class="w-14">
+                            </div>
+                            <div>
+
+                                <!-- مسمى الوظيفي -->
+                                <h3 class="text-base font-bold text-indigo-950">Sr. Software engineer</h3>
+                                <!-- مسمى الوظيفي -->
+
+                                <!-- اسم الشركة -->
+                                <span>Google</span>
+                                <!-- اسم الشركة -->
+
+                            </div>
+                        </div>
+                        
+                        <!-- تاريخ النشر -->
+                        <span>Jan 2024 - Present</span>
+                        <!-- تاريخ النشر -->
+
+                    </div>
+                    <!-- header of jop card -->
+
+                    <!-- job information -->
+                    <div class="flex  justify-around items-center pt-10">
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <p>1000</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Remotly</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <p>fresh</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Jordan</p>
+                        </div>
+                    </div>
+                    <!-- job information -->
+
+                    <!-- Buttons -->
+                    <div class="flex justify-center items-center w-full  gap-3">
+                        <button
+                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Save
+                        </button>
+                        <button
+                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Application now
+                        </button>
+
+                    </div>
+                    <!-- Buttons -->
+                </div>
+                <!-- نهاية كرت الوظيفة -->
+
+                <!-- بداية كرت الوظيفة -->
+                <div class="w-full border border-gray-200 p-4 rounded-xl mx-2 max-w-2xl">
+
+                    <!-- header of jop card -->
+                    <div class="flex  items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                        <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-1">
+                                <img src="src/googleLogo.png" alt="" class="w-14">
+                            </div>
+                            <div>
+
+                                <!-- مسمى الوظيفي -->
+                                <h3 class="text-base font-bold text-indigo-950">Sr. Software engineer</h3>
+                                <!-- مسمى الوظيفي -->
+
+                                <!-- اسم الشركة -->
+                                <span>Google</span>
+                                <!-- اسم الشركة -->
+
+                            </div>
+                        </div>
+                        
+                        <!-- تاريخ النشر -->
+                        <span>Jan 2024 - Present</span>
+                        <!-- تاريخ النشر -->
+
+                    </div>
+                    <!-- header of jop card -->
+
+                    <!-- job information -->
+                    <div class="flex  justify-around items-center pt-10">
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <p>1000</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Remotly</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <p>fresh</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Jordan</p>
+                        </div>
+                    </div>
+                    <!-- job information -->
+
+                    <!-- Buttons -->
+                    <div class="flex justify-center items-center w-full  gap-3">
+                        <button
+                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Save
+                        </button>
+                        <button
+                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Application now
+                        </button>
+
+                    </div>
+                    <!-- Buttons -->
+                </div>
+                <!-- نهاية كرت الوظيفة -->
+
+                <!-- بداية كرت الوظيفة -->
+                <div class="w-full border border-gray-200 p-4 rounded-xl mx-2 max-w-2xl">
+
+                    <!-- header of jop card -->
+                    <div class="flex  items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                        <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-1">
+                                <img src="src/googleLogo.png" alt="" class="w-14">
+                            </div>
+                            <div>
+
+                                <!-- مسمى الوظيفي -->
+                                <h3 class="text-base font-bold text-indigo-950">Sr. Software engineer</h3>
+                                <!-- مسمى الوظيفي -->
+
+                                <!-- اسم الشركة -->
+                                <span>Google</span>
+                                <!-- اسم الشركة -->
+
+                            </div>
+                        </div>
+                        
+                        <!-- تاريخ النشر -->
+                        <span>Jan 2024 - Present</span>
+                        <!-- تاريخ النشر -->
+
+                    </div>
+                    <!-- header of jop card -->
+
+                    <!-- job information -->
+                    <div class="flex  justify-around items-center pt-10">
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <p>1000</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Remotly</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <p>fresh</p>
+                        </div>
+                        <div class="text-gray-600 flex justify-center items-center gap-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Jordan</p>
+                        </div>
+                    </div>
+                    <!-- job information -->
+
+                    <!-- Buttons -->
+                    <div class="flex justify-center items-center w-full  gap-3">
+                        <button
+                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Save
+                        </button>
+                        <button
+                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Application now
+                        </button>
+
+                    </div>
+                    <!-- Buttons -->
+                </div>
+                <!-- نهاية كرت الوظيفة -->
+
+            </div>
+            <!-- flexbox بحتوي كل عناصر ال عمود الأوسط  -->
+        </div>
+        <!-- العمود الأوسط نهاية -->
+
+
+
+        <!-- العمود الأيمن بداية -->
+        <div
+            class="    col-span-3 bg-white  w-full my-2  rounded-md  hidden shadow-lg shadow-gray-500  lg:block">
+
+
+            <!-- حاوية لكل عناصر العمود الأيمن -- بداية -->
+            <div class="flex flex-col justify-center items-center gap-12 p-2 w-full  ">
+
+                <!-- people suggested (begin) -->
+                <div class="flex flex-col justify-center items-center mt-8 gap-5 w-full">
+                    <h1 class="text-2xl font-bold text-indigo-950">Suggested for You</h1>
+
+                    <!-- card bdgin -->
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2 w-full">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-center items-center text-left ">
+                                <p class="text-indigo-950 font-bold  text-lg">Abdalrahman baker</p>
+                                <p class="text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- card end -->
+                                     </div>
+                <!-- people suggested (end) -->
+
+
+
+                <!-- company suggested (begin) -->
+                <div class="flex flex-col justify-center items-center mt-8 gap-5 w-full">
+                    <h1 class="text-2xl font-bold text-indigo-950">Suggested Company</h1>
+
+                    <!-- card bdgin -->
+                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
+                        <div class="flex justify-start items-center gap-2 w-full">
+                            <a href=""><img src="src/Abood.png" alt=""
+                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
+                            <div class="flex flex-col justify-center items-center text-left ">
+                                <p class="text-indigo-950 font-bold  text-lg ">Abdalrahman baker</p>
+                                <p class="text-gray-600">.Net develober</p>
+                            </div>
+                        </div>
+                        <button>
+                            <div
+                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
+                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
+                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- card end -->
+                                     </div>
+                <!-- company suggested (end) -->
+
+
+
+
+
+
+            </div>
+            <!-- حاوية لكل عناصر العمود الأيمن -- نهاية -->
+        </div>
+        <!-- العمود الأيمن نهاية -->
+    </div>
+    </div>
+    <!-- الصفحة كاملة نهاية -->
+
+    <!-- فتح واغلاق ال mobile menue -->
+    <script>
+        const openMenu = document.getElementById("open-menu");
+        const closeMenu = document.getElementById("close-menu");
+        const navLinks = document.getElementById("mobile-navLinks");
+
+        const openMenuHandler = () => {
+            navLinks.classList.remove("-translate-x-full")
+            navLinks.classList.add("translate-x-0")
+        }
+
+        const closeMenuHandler = () => {
+            navLinks.classList.remove("translate-x-0")
+            navLinks.classList.add("-translate-x-full")
+        }
+
+        openMenu.addEventListener("click", openMenuHandler);
+        closeMenu.addEventListener("click", closeMenuHandler);
+    </script>
+    <!-- فتح واغلاق ال mobile menue -->
+
+   
+
+</body>
+
+</html>
