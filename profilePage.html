@@ -13,35 +13,58 @@
 </head>
 
 <body class="bg-gray-100 overflow-x-hidden pt-16  ">
+    <!-- Navigation bar begin -->
     <nav
-        class="z-50 flex items-center justify-between  py-0.5 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-slate-800 text-sm fixed top-0 w-full">
+        class="z-50 flex items-center justify-between  py-4 px-6 md:px-16 lg:px-24 xl:px-32 bg-white text-blue-800 text-sm fixed top-0 w-full">
+
+        <!-- logo -->
         <a href="laddingPage.html">
-            <img src="src/3.png" alt="" class="w-20">
+            <img src="src/5.png" alt="" class="w-20">
         </a>
+        <!-- logo -->
 
-        <div class="hidden md:flex items-center gap-10 transition duration-500">
-            <a href="/" class="hover:text-slate-500 text-md lg:text-lg font-semibold transition">
-                Home
+        <!-- main links -->
+        <div class="hidden md:flex items-center gap-8 transition duration-500 text-blue-800">
+            <a href="index.html" class="flex flex-col justify-center items-center gap-1 text-lg ">
+                <i class="fa-solid fa-house text-blue-800"></i>
+                <p class="text-indigo-950">Home</p>
             </a>
-            <a href="Jops.html" class="hover:text-slate-500 text-md lg:text-lg font-semibold transition">
-                Jobs
+            <a href="Jobs.html" class="flex flex-col justify-center items-center gap-1 text-lg ">
+                <i class="fa-solid fa-briefcase text-blue-800"></i>
+                <p class="text-indigo-950">Jops</p>
             </a>
-            <a href="/stories" class="hover:text-slate-500 text-md lg:text-lg font-semibold  transition">
-                My Applications
+            <a href="MyApplication.html" class="flex flex-col justify-center items-center gap-1 text-lg ">
+                <i class="fa-solid fa-user-tie text-blue-800"></i>
+                <p class="text-indigo-950">Applications</p>
             </a>
-            <a href="/pricing" class="hover:text-slate-500 text-md lg:text-lg  font-semibold transition">
-                saved jobs
+            <a href="#" class="flex flex-col justify-center items-center gap-1 text-lg ">
+                <i class="fa-solid fa-bookmark text-blue-800"></i>
+                <p class="text-indigo-950">Saved Jops</p>
             </a>
         </div>
+        <!-- main links -->
 
+        <!-- login and signup buttons begin -->
         <div class="hidden md:block space-x-3">
-            <button class="px-3 lg:px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md">
-                <a href="ChoseAccountType.html">Get Started</a>
-            </button>
-            <button class="hover:bg-slate-100 transition px-3 lg:px-6 py-2  border border-indigo-600 rounded-md">
-                <a href="UserLogin.html">Login</a>
-            </button>
+
+            <!-- signUp buttons -->
+            <a href="UserSignUp.html"
+                class="px-3 lg:px-6 py-2 bg-blue-800 hover:bg-blue-800 transition text-white rounded-md">
+                Get Started
+            </a>
+            <!-- signUp buttons -->
+
+            <!-- login button -->
+            <a href="UserLogin.html"
+                class="hover:bg-slate-100 transition px-3 lg:px-6 py-2  border border-blue-800 rounded-md">
+                Login
+            </a>
+            <!-- login button -->
+
         </div>
+        <!-- login and signup buttons end -->
+
+        <!-- mobile menue button -->
         <button id="open-menu" class="md:hidden active:scale-90 transition">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -51,31 +74,39 @@
                 <path d="M4 19h16" />
             </svg>
         </button>
+        <!-- mobile menue button -->
+
     </nav>
+    <!-- Navigation bar end -->
+
+    <!-- mobile navbar -->
     <div id="mobile-navLinks"
-        class="fixed inset-0 z-[100] bg-white/60 text-slate-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 -translate-x-full">
-        <a href="/">
+        class="fixed inset-0 z-[100] bg-white/60 text-blue-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 -translate-x-full">
+
+        <!-- main links -->
+        <a href="index.html">
             Home
         </a>
+        <a href="Jobs.html">
+            Jobs
+        </a>
+        <a href="MyApplication.html">
+            My Application
+        </a>
         <a href="/products">
-            Products
+            Saved
         </a>
-        <a href="/stories">
-            Stories
-        </a>
-        <a href="/pricing">
-            Pricing
-        </a>
+        <!-- main links -->
+
+        <!-- زر اغلاق ال navbar -->
         <button id="close-menu"
-            class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-slate-100 hover:bg-slate-200 transition text-black rounded-md flex">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-x-icon lucide-x">
-                <path d="M18 6 6 18" />
-                <path d="m6 6 12 12" />
-            </svg>
+            class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center  hover:bg-slate-200 transition text-black rounded-md flex">
+            <i class="fa-solid fa-x text-blue-800"></i>
         </button>
+        <!-- زر اغلاق ال navbar -->
+
     </div>
+    <!-- mobile navbar -->
 
     <!--  الصفحة كاملة بداية-->
     <div class="grid grid-cols-1 gap-5 mx-5 md:grid-cols-3 my-5 lg:grid-cols-12">
@@ -104,51 +135,62 @@
 
 
                 <!-- personal information begin -->
-                <div class=" flex flex-col justify-center items-center text-center px-6 py-4">
+                <div class=" flex flex-col justify-center items-center text-center px-6 py-4 ">
                     <h2 class="text-xl font-extrabold text-indigo-950 tracking-tight">Abdalrahman Baker</h2>
                     <p class="text-indigo-600 font-semibold text-sm">.Net Developer</p>
-                    <div class="flex flex-col lg:flex-row justify-between items-center gap-10 px-5 my-5 w-full">
+
+                    <!-- frends and posts number -->
+                    <div class="flex border-t border-gray-50 bg-gray-50 w-full my-8">
+                        <div class="flex-1 text-center py-4 border-r border-gray-100">
+                            <span class="block text-xl font-bold text-indigo-950">124</span>
+                            <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Posts</span>
+                        </div>
+                        <div class="flex-1 text-center py-4">
+                            <span class="block text-xl font-bold text-indigo-950">850</span>
+                            <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Friends</span>
+                        </div>
+                    </div>
+                    <!-- frends and posts number -->
+
+
+
+                    <!-- contact info -->
+                    <div class="flex flex-col lg:flex-row justify-around items-center  w-full my-5">
                         <p class="text-gray-600 font-semibold text-xl ">contact info :</p>
 
                         <a href="" class="text-indigo-500 text-lg">aboodbaker044@gmail.com</a>
+
                         <p class="text-indigo-500 text-lg">0781458386</p>
                         <p class="text-indigo-500 text-lg">ِAmman</p>
-                    </div>
-
-
-                    <div>
 
                     </div>
+                    <!-- contact info -->
 
-                              
 
-                    <p class="mt-3 text-gray-500 text-sm leading-relaxed line-clamp-3">
-                        Passionate software engineer focused on building scalable web applications using .Net Core and
-                        modern frontend technologies.
-                    </p>
-                    <p class="mt-3 text-gray-500 text-sm leading-relaxed line-clamp-3">
-                        Passionate software engineer focused on building scalable web applications using .Net Core and
-                        modern frontend technologies.
-                    </p>
-                    <p class="mt-3 text-gray-500 text-sm leading-relaxed line-clamp-3">
-                        Passionate software engineer focused on building scalable web applications using .Net Core and
-                        modern frontend technologies.
+
+
+                    <p class="mt-3 text-gray-500 text-sm leading-relaxed line-clamp-none">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores libero doloribus
+                        odit? Soluta porro hic quod sequi quidem modi nulla quae animi, deleniti laborum recusandae
+                        similique repudiandae quaerat consequuntur.
+                        Ipsam, eius! Saepe dolore molestias corporis debitis commodi optio deserunt similique laborum
+                        veritatis accusantium porro minima architecto praesentium reprehenderit facilis sit quisquam
+                        vitae adipisci, distinctio quaerat beatae maxime provident! Necessitatibus!
+                        Cupiditate fuga non quisquam doloribus quae quidem nobis, amet quaerat explicabo repudiandae
+                        quod facere natus odit sequi incidunt error ullam recusandae necessitatibus molestias modi!
+                        Voluptatem quibusdam explicabo sequi sit aperiam?
+                        Reprehenderit aliquid deleniti sed, quam et perspiciatis unde laudantium animi. Cupiditate
+                        libero aut sed rem, molestiae error animi ut! Labore nobis voluptates pariatur repudiandae sequi
+                        possimus reprehenderit illum itaque adipisci!
+                        Ipsam, cumque expedita aut non reprehenderit autem magnam quos mollitia facere nulla sunt,
+                        corporis delectus quia dolorem minus dicta molestiae quod. Rerum eaque porro culpa! Quis, ut
+                        architecto. Error, quibusdam!
+
                     </p>
                 </div>
                 <!-- personal information end -->
 
-                <!-- frends and posts number -->
-                <div class="flex border-t border-gray-50 bg-gray-50/50">
-                    <div class="flex-1 text-center py-4 border-r border-gray-100">
-                        <span class="block text-xl font-bold text-indigo-950">124</span>
-                        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Posts</span>
-                    </div>
-                    <div class="flex-1 text-center py-4">
-                        <span class="block text-xl font-bold text-indigo-950">850</span>
-                        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Friends</span>
-                    </div>
-                </div>
-                <!-- frends and posts number -->
+
 
 
                 <!-- skills section begin -->
@@ -192,14 +234,10 @@
                 <!-- skils section end -->
 
 
-                <div class="p-4">
-                    <a href="/profile"
-                        class="block w-full text-center bg-indigo-950 text-white py-2.5 rounded-xl font-bold text-sm shadow-md hover:bg-indigo-900 hover:shadow-indigo-200 transition-all active:scale-[0.98]">
-                        View Full Profile
-                    </a>
-                </div>
+                <hr class="my-5">
                 <!-- Post begin -->
-                <div class="  w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
+                <div
+                    class="  w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
 
                     <div class="flex items-center px-4 py-3">
                         <div class="h-12 w-12 rounded-full overflow-hidden border border-gray-100 shrink-0">
@@ -275,8 +313,9 @@
 
                 </div>
                 <!-- Post end -->
-                  <!-- Post begin -->
-                <div class=" w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
+                <!-- Post begin -->
+                <div
+                    class=" w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
 
                     <div class="flex items-center px-4 py-3">
                         <div class="h-12 w-12 rounded-full overflow-hidden border border-gray-100 shrink-0">
@@ -352,8 +391,9 @@
 
                 </div>
                 <!-- Post end -->
-                  <!-- Post begin -->
-                <div class="w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
+                <!-- Post begin -->
+                <div
+                    class="w-full lg:w-4/5 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
 
                     <div class="flex items-center px-4 py-3">
                         <div class="h-12 w-12 rounded-full overflow-hidden border border-gray-100 shrink-0">
@@ -429,8 +469,9 @@
 
                 </div>
                 <!-- Post end -->
-                 <!-- Post begin -->
-                <div class=" w-full lg:w-5/6 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
+                <!-- Post begin -->
+                <div
+                    class=" w-full lg:w-5/6 max-w-lg mx-auto bg-white rounded-md shadow-sm border border-gray-200 overflow-hidden">
 
                     <div class="flex items-center px-4 py-3">
                         <div class="h-12 w-12 rounded-full overflow-hidden border border-gray-100 shrink-0">
@@ -465,8 +506,7 @@
 
                     <div class="bg-gray-100">
                         <img class="w-full h-auto object-cover max-h-[500px]"
-                            src="src/pexels-benjamin-adjei-abayie-2158492422-36659831.jpg"
-                            alt="Post Content Image">
+                            src="src/pexels-benjamin-adjei-abayie-2158492422-36659831.jpg" alt="Post Content Image">
                     </div>
 
                     <div
@@ -509,7 +549,14 @@
 
                 </div>
                 <!-- Post end -->
-                 
+
+                 <div class="p-4">
+                    <a href="/profile"
+                        class="block w-1/2 mx-auto text-center bg-indigo-950 text-white py-2.5 rounded-xl font-bold text-sm shadow-md hover:bg-indigo-900 hover:shadow-indigo-200 transition-all active:scale-[0.98]">
+                        View Full Profile
+                    </a>
+                </div>
+
             </div>
             <!-- نهاية ال ملف الشخصي -->
 
@@ -519,228 +566,96 @@
 
 
 
-        <div
-            class="    col-span-3 bg-white  w-full my-2  rounded-md  hidden shadow-lg shadow-gray-500  md:hidden lg:block">
-
-            <div class="flex flex-col justify-center items-center gap-4 p-2 ">
-
-                <h1 class="text-2xl font-bold text-indigo-950">Suggested for You</h1>
+        <!-- العمود الأيمن بداية -->
+        <div class="   col-span-3 bg-gray-100  w-full my-2    hidden sticky top-20 h-fit   lg:block">
 
 
+            <!-- حاوية لكل عناصر العمود الأيمن -- بداية -->
+            <div class="  flex flex-col justify-center items-center gap-12  w-full  ">
 
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
+
+                <div class=" bg-white rounded-md border-gray-600 shadow-md shadow-gray-600 py-4">
+                    <!-- people suggested (begin) -->
+                    <div class="flex flex-col justify-center items-center mt-4 gap-5 w-full">
+                        <h1 class="text-2xl font-bold text-blue-800">Suggested for You</h1>
+
+                        <!-- card bdgin -->
+                        <div class="flex justify-between items-center rounded-lg  w-full p-4 ">
+                            <div class="flex items-center gap-2.5">
+                                <img class="w-12 h-12 rounded-full" src="src/Abood.png" alt="">
+                                <div class="font-medium text-heading">
+                                    <div>Abdalrahman baker</div>
+                                    <div class="text-sm font-normal text-body">.net developer</div>
+                                </div>
                             </div>
+                            <button>
+                                <div
+                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-blue-800 p-2">
+                                    <h1 class="text-sm font-semibold text-blue-800">Follow</h1>
+                                    <i class="fa-solid fa-plus text-sm text-blue-800"></i>
+                                </div>
+                            </button>
                         </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                        <!-- card end -->
+                        <!-- card bdgin -->
+                        <div class="flex justify-between items-center rounded-lg  w-full p-4 ">
+                            <div class="flex items-center gap-2.5">
+                                <img class="w-12 h-12 rounded-full" src="src/Abood.png" alt="">
+                                <div class="font-medium text-heading">
+                                    <div>Abdalrahman baker</div>
+                                    <div class="text-sm font-normal text-body">.net developer</div>
+                                </div>
                             </div>
-                        </button>
-                    </div>
-                </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
-                            </div>
+                            <button>
+                                <div
+                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-blue-800 p-2">
+                                    <h1 class="text-sm font-semibold text-blue-800">Follow</h1>
+                                    <i class="fa-solid fa-plus text-sm text-blue-800"></i>
+                                </div>
+                            </button>
                         </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
+                        <!-- card end -->
                     </div>
+                    <!-- people suggested (end) -->
                 </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
+
+
+                <div class=" bg-white rounded-md border-gray-600 shadow-md shadow-gray-600 py-4">
+                    <!-- company suggested (begin) -->
+                    <div class="flex flex-col justify-center items-center mt-4 gap-5 w-full">
+                        <h1 class="text-2xl font-bold text-blue-800">Suggested Company</h1>
+
+                        <!-- card bdgin -->
+                        <div class="flex justify-between items-center rounded-lg  w-full p-4 ">
+                            <div class="flex items-center gap-2.5">
+                                <img class="w-12 h-12 rounded-full" src="src/Abood.png" alt="">
+                                <div class="font-medium text-heading">
+                                    <div>Abdalrahman baker</div>
+                                    <div class="text-sm font-normal text-body">.net developer</div>
+                                </div>
                             </div>
+                            <button>
+                                <div
+                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-blue-800 p-2">
+                                    <h1 class="text-sm font-semibold text-blue-800">Follow</h1>
+                                    <i class="fa-solid fa-plus text-sm text-blue-800"></i>
+                                </div>
+                            </button>
                         </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
+                        <!-- card end -->
                     </div>
+                    <!-- company suggested (end) -->
                 </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
-                            </div>
-                        </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
-                            </div>
-                        </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
-                            </div>
-                        </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
-                            </div>
-                        </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
-                            </div>
-                        </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
-                            </div>
-                        </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <!-- card end -->
-                <!-- card bdgin -->
-                <div class="flex flex-col justify-center items-center gap-3 p-2 ">
-                    <div class="flex justify-between items-center rounded-lg shadow-sm shadow-gray-700 w-full p-4 ">
-                        <div class="flex justify-start items-center gap-2">
-                            <a href=""><img src="src/Abood.png" alt=""
-                                    class="rounded-full w-14 border-2 border-indigo-950"></a>
-                            <div class="flex flex-col justify-start items-center ">
-                                <p class="text-indigo-950 font-bold text-lg text-left">Abdalrahman baker</p>
-                                <p class="text-left text-gray-600">.Net develober</p>
-                            </div>
-                        </div>
-                        <button>
-                            <div
-                                class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <!-- card end -->
+
+
+
+
+
 
             </div>
+            <!-- حاوية لكل عناصر العمود الأيمن -- نهاية -->
         </div>
+        <!-- العمود الأيمن نهاية -->
     </div>
     </div>
     <!-- الصفحة كاملة نهاية -->

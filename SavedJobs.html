@@ -16,7 +16,7 @@
 <body class="bg-gray-100 overflow-x-hidden pt-16  ">
     <!-- Navigation bar begin -->
     <nav
-        class="z-50 flex items-center justify-between  py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-slate-800 text-sm fixed top-0 w-full">
+        class="z-50 flex items-center justify-between  py-4 px-6 md:px-16 lg:px-24 xl:px-32 bg-white text-blue-800 text-sm fixed top-0 w-full">
 
         <!-- logo -->
         <a href="laddingPage.html">
@@ -25,18 +25,22 @@
         <!-- logo -->
 
         <!-- main links -->
-        <div class="hidden md:flex items-center gap-10 transition duration-500">
-            <a href="index.html" class="hover:text-slate-500 text-md lg:text-lg font-semibold transition">
-                Home
+        <div class="hidden md:flex items-center gap-8 transition duration-500 text-blue-800">
+            <a href="index.html" class="flex flex-col justify-center items-center gap-1 text-lg ">
+                <i class="fa-solid fa-house text-blue-800"></i>
+                <p class="text-indigo-950">Home</p>
             </a>
-            <a href="Jops.html" class="hover:text-slate-500 text-md lg:text-lg font-semibold transition">
-                Jobs
+            <a href="Jobs.html" class="flex flex-col justify-center items-center gap-1 text-lg ">
+                <i class="fa-solid fa-briefcase text-blue-800"></i>
+                <p class="text-indigo-950">Jobs</p>
             </a>
-            <a href="MyApplication.html" class="hover:text-slate-500 text-md lg:text-lg font-semibold  transition">
-                My Applications
+            <a href="MyApplication.html" class="flex flex-col justify-center items-center gap-1 text-lg ">
+                <i class="fa-solid fa-user-tie text-blue-800"></i>
+                <p class="text-indigo-950">Applications</p>
             </a>
-            <a href="/pricing" class="hover:text-slate-500 text-md lg:text-lg  font-semibold transition">
-                saved jobs
+            <a href="SavedJobs.html" class="flex flex-col justify-center items-center gap-1 text-lg ">
+                <i class="fa-solid fa-bookmark text-blue-800"></i>
+                <p class="text-indigo-950">Saved Jops</p>
             </a>
         </div>
         <!-- main links -->
@@ -46,14 +50,14 @@
 
             <!-- signUp buttons -->
             <a href="UserSignUp.html"
-                class="px-3 lg:px-6 py-2 bg-indigo-600 hover:bg-indigo-700 transition text-white rounded-md">
+                class="px-3 lg:px-6 py-2 bg-blue-800 hover:bg-blue-800 transition text-white rounded-md">
                 Get Started
             </a>
             <!-- signUp buttons -->
 
             <!-- login button -->
             <a href="UserLogin.html"
-                class="hover:bg-slate-100 transition px-3 lg:px-6 py-2  border border-indigo-600 rounded-md">
+                class="hover:bg-slate-100 transition px-3 lg:px-6 py-2  border border-blue-800 rounded-md">
                 Login
             </a>
             <!-- login button -->
@@ -78,19 +82,19 @@
 
     <!-- mobile navbar -->
     <div id="mobile-navLinks"
-        class="fixed inset-0 z-[100] bg-white/60 text-indigo-950 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 -translate-x-full">
+        class="fixed inset-0 z-[100] bg-white/60 text-blue-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 -translate-x-full">
 
         <!-- main links -->
         <a href="index.html">
             Home
         </a>
-        <a href="Jops.html">
+        <a href="Jobs.html">
             Jobs
         </a>
         <a href="MyApplication.html">
             My Application
         </a>
-        <a href="/products">
+        <a href="SavedJobs.html">
             Saved
         </a>
         <!-- main links -->
@@ -98,7 +102,7 @@
         <!-- زر اغلاق ال navbar -->
         <button id="close-menu"
             class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center  hover:bg-slate-200 transition text-black rounded-md flex">
-            <i class="fa-solid fa-x text-indigo-950"></i>
+            <i class="fa-solid fa-x text-blue-800"></i>
         </button>
         <!-- زر اغلاق ال navbar -->
 
@@ -108,7 +112,7 @@
     <!--  الصفحة كاملة بداية-->
 
     <div class="grid grid-cols-1 gap-5 mx-5 md:grid-cols-3 my-5 lg:grid-cols-12">
-        <!-- العمود اليسار بداية -->
+       <!-- العمود اليسار بداية -->
         <div class="col-span-3 hidden lg:block bg-gray-100 w-full  sticky top-20 h-fit ">
 
             <!-- profile card begin -->
@@ -128,10 +132,10 @@
                 <!-- user headline -->
 
                 <!-- veiw profile button -->
-                <button
-                    class="bg-indigo-950 rounded-full text-white w-full p-1 my-2 hover:bg-green-300 hover:text-indigo-950 hover:-translate-y-0.5 hover:transition-all hover:duration-300 ">
-                    <a href="profilePage.html">ViewProfile</a>
-                </button>
+                <a href="profilePage.html"
+                    class="bg-white rounded-full text-blue-800 text-center border-2 border-blue-800 w-full p-1 my-2 hover:bg-blue-800 hover:text-white hover:-translate-y-0.5 hover:transition-all hover:duration-300 ">
+                    ViewProfile</a>
+
                 <!-- veiw profile button -->
 
             </div>
@@ -141,26 +145,42 @@
             <!-- side bar begin -->
             <div
                 class="flex flex-col gap-6 justify-between items-start mx-auto my-5 w-full p-2 bg-white  rounded-lg   border border-gray-100 shadow-lg shadow-gray-500">
-                <a href="#" class="flex justify-center items-center gap-3 ">
-                    <i class="fa-solid fa-house text-indigo-950"></i>
-                    <p> Home</p>
+                <a href="index.html" class="flex justify-center items-center gap-3 ">
+                    <i class="fa-solid fa-house text-blue-800"></i>
+                    <p class="text-indigo-950"> Home</p>
+                </a>
+                <a href="Jobs.html" class="flex justify-center items-center gap-3 ">
+                    <i class="fa-solid fa-briefcase text-blue-800"></i>
+                    <p class="text-indigo-950"> Jops</p>
+                </a>
+                <a href="MyApplication.html" class="flex justify-center items-center gap-3 ">
+                    <i class="fa-solid fa-user-tie text-blue-800"></i>
+                    <p class="text-indigo-950"> My Applications</p>
+                </a>
+                <a href="SavedJobs.html" class="flex justify-center items-center gap-3 ">
+                    <i class="fa-solid fa-bookmark text-blue-800"></i>
+                    <p class="text-indigo-950"> Saved Jops</p>
                 </a>
                 <a href="#" class="flex justify-center items-center gap-3 ">
-                    <i class="fa-solid fa-briefcase text-indigo-950"></i>
-                    <p> Jops</p>
+                    <i class="fa-solid fa-arrow-right-from-bracket text-blue-800"></i>
+                    <p class="text-indigo-950">Logout</p>
                 </a>
-                <a href="#" class="flex justify-center items-center gap-3 ">
-                    <i class="fa-solid fa-user-tie text-indigo-950"></i>
-                    <p> My Applications</p>
-                </a>
-                <a href="#" class="flex justify-center items-center gap-3 ">
-                    <i class="fa-solid fa-bookmark text-indigo-950"></i>
-                    <p> Saved Jops</p>
-                </a>
+
 
             </div>
             <!-- side bar end -->
 
+            <a href="createCompany.html"
+                class="flex items-center justify-center px-5 py-3 mt-4 text-blue-800 bg-white font-semibold border-2 border-blue-800 rounded-lg transition-all duration-300 hover:bg-blue-800 hover:text-white hover:shadow-md group">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+                <span>Create Company</span>
+            </a>
         </div>
         <!-- العمود اليسار نهاية -->
 
@@ -185,7 +205,7 @@
                             </span>
                         </div>
                         <button
-                            class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 shadow-md">
+                            class="bg-blue-800 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 shadow-md">
                             Search
                         </button>
                     </div>
@@ -237,6 +257,8 @@
                 <!-- search bar and feltteration begin -->
 
 
+                
+                
                 <!-- بداية كرت الوظيفة -->
                 <div class="w-full border border-gray-200 p-4 rounded-xl mx-2 max-w-2xl">
 
@@ -289,219 +311,21 @@
 
                     <!-- Buttons -->
                     <div class="flex justify-center items-center w-full  gap-3">
-                        <button onclick="alert('this job is saved')"
-                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
-                            Save
+                        <button onclick="alert('un Save is done')"
+                            class="bg-blue-800 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            Unsave
                         </button>
                         <button
-                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
+                            class="bg-blue-800 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
                             <a href="jobApplication.html"> Show more</a>
                         </button>
 
                     </div>
                     <!-- Buttons -->
+
                 </div>
                 <!-- نهاية كرت الوظيفة -->
-
-                <!-- بداية كرت الوظيفة -->
-                <div class="w-full border border-gray-200 p-4 rounded-xl mx-2 max-w-2xl">
-
-                    <!-- header of jop card -->
-                    <div class="flex  items-start gap-3 md:items-center justify-between w-full text-gray-500">
-                        <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
-                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-1">
-                                <img src="src/googleLogo.png" alt="" class="w-14">
-                            </div>
-                            <div>
-
-                                <!-- مسمى الوظيفي -->
-                                <h3 class="text-base font-bold text-indigo-950">Sr. Software engineer</h3>
-                                <!-- مسمى الوظيفي -->
-
-                                <!-- اسم الشركة -->
-                                <span>Google</span>
-                                <!-- اسم الشركة -->
-
-                            </div>
-                        </div>
-
-                        <!-- تاريخ النشر -->
-                        <span>Jan 2024 - Present</span>
-                        <!-- تاريخ النشر -->
-
-                    </div>
-                    <!-- header of jop card -->
-
-                    <!-- job information -->
-                    <div class="flex  justify-around items-center pt-10">
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <p>1000</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>Remotly</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-briefcase"></i>
-                            <p>fresh</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Jordan</p>
-                        </div>
-                    </div>
-                    <!-- job information -->
-
-                    <!-- Buttons -->
-                    <div class="flex justify-center items-center w-full  gap-3">
-                        <button onclick="alert('this job is saved')"
-                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
-                            Save
-                        </button>
-                        <button
-                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
-                            <a href="jobApplication.html"> Show more</a>
-                        </button>
-
-                    </div>
-                    <!-- Buttons -->
-                </div>
-                <!-- نهاية كرت الوظيفة -->
-
-
-                <!-- بداية كرت الوظيفة -->
-                <div class="w-full border border-gray-200 p-4 rounded-xl mx-2 max-w-2xl">
-
-                    <!-- header of jop card -->
-                    <div class="flex  items-start gap-3 md:items-center justify-between w-full text-gray-500">
-                        <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
-                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-1">
-                                <img src="src/googleLogo.png" alt="" class="w-14">
-                            </div>
-                            <div>
-
-                                <!-- مسمى الوظيفي -->
-                                <h3 class="text-base font-bold text-indigo-950">Sr. Software engineer</h3>
-                                <!-- مسمى الوظيفي -->
-
-                                <!-- اسم الشركة -->
-                                <span>Google</span>
-                                <!-- اسم الشركة -->
-
-                            </div>
-                        </div>
-
-                        <!-- تاريخ النشر -->
-                        <span>Jan 2024 - Present</span>
-                        <!-- تاريخ النشر -->
-
-                    </div>
-                    <!-- header of jop card -->
-
-                    <!-- job information -->
-                    <div class="flex  justify-around items-center pt-10">
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <p>1000</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>Remotly</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-briefcase"></i>
-                            <p>fresh</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Jordan</p>
-                        </div>
-                    </div>
-                    <!-- job information -->
-
-                    <!-- Buttons -->
-                    <div class="flex justify-center items-center w-full  gap-3">
-                        <button onclick="alert('this job is saved')"
-                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
-                            Save
-                        </button>
-                        <button
-                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
-                            <a href="jobApplication.html"> Show more</a>
-                        </button>
-
-                    </div>
-                    <!-- Buttons -->
-                </div>
-                <!-- نهاية كرت الوظيفة -->
-
-                <!-- بداية كرت الوظيفة -->
-                <div class="w-full border border-gray-200 p-4 rounded-xl mx-2 max-w-2xl">
-
-                    <!-- header of jop card -->
-                    <div class="flex  items-start gap-3 md:items-center justify-between w-full text-gray-500">
-                        <div class="flex flex-col md:flex-row items-start md:items-center gap-3">
-                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-1">
-                                <img src="src/googleLogo.png" alt="" class="w-14">
-                            </div>
-                            <div>
-
-                                <!-- مسمى الوظيفي -->
-                                <h3 class="text-base font-bold text-indigo-950">Sr. Software engineer</h3>
-                                <!-- مسمى الوظيفي -->
-
-                                <!-- اسم الشركة -->
-                                <span>Google</span>
-                                <!-- اسم الشركة -->
-
-                            </div>
-                        </div>
-
-                        <!-- تاريخ النشر -->
-                        <span>Jan 2024 - Present</span>
-                        <!-- تاريخ النشر -->
-
-                    </div>
-                    <!-- header of jop card -->
-
-                    <!-- job information -->
-                    <div class="flex  justify-around items-center pt-10">
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <p>1000</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>Remotly</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-briefcase"></i>
-                            <p>fresh</p>
-                        </div>
-                        <div class="text-gray-600 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Jordan</p>
-                        </div>
-                    </div>
-                    <!-- job information -->
-
-                    <!-- Buttons -->
-                    <div class="flex justify-center items-center w-full  gap-3">
-                        <button onclick="alert('this job is saved')"
-                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
-                            Save
-                        </button>
-                        <button
-                            class="bg-indigo-700 rounded-lg text-white w-1/2 px-2 py-2 mt-4 hover:bg-indigo-900 hover:duration-200 ">
-                            <a href="jobApplication.html"> Show more</a>
-                        </button>
-
-                    </div>
-                    <!-- Buttons -->
-                </div>
-                <!-- نهاية كرت الوظيفة -->
-
+                 
                 <!-- Pagination Bar begin -->
                 <div class="flex items-center justify-between border border-gray-400 bg-white px- py-4 sm:px-6 rounded-xl shadow-sm mt-8"
                     dir="ltr">
@@ -567,7 +391,7 @@
 
 
 
-        <!-- العمود الأيمن بداية -->
+                <!-- العمود الأيمن بداية -->
         <div class="   col-span-3 bg-gray-100  w-full my-2    hidden sticky top-20 h-fit   lg:block">
 
 
@@ -578,79 +402,78 @@
                 <div class=" bg-white rounded-md border-gray-600 shadow-md shadow-gray-600 py-4">
                     <!-- people suggested (begin) -->
                     <div class="flex flex-col justify-center items-center mt-4 gap-5 w-full">
-                        <h1 class="text-2xl font-bold text-indigo-950">Suggested for You</h1>
+                        <h1 class="text-2xl font-bold text-blue-800">Suggested for You</h1>
 
                         <!-- card bdgin -->
                         <div class="flex justify-between items-center rounded-lg  w-full p-4 ">
-                            <div class="flex justify-start items-center gap-2 w-full">
-                                <a href=""><img src="src/Abood.png" alt=""
-                                        class="rounded-full w-14 border-2 border-indigo-950"></a>
-                                <div class="flex flex-col justify-center items-center text-left ">
-                                    <p class="text-indigo-950 font-bold  text-lg">Abdalrahman baker</p>
-                                    <p class="text-gray-600">.Net develober</p>
+                            <div class="flex items-center gap-2.5">
+                                <img class="w-12 h-12 rounded-full" src="src/Abood.png"
+                                    alt="">
+                                <div class="font-medium text-heading">
+                                    <div>Abdalrahman baker</div>
+                                    <div class="text-sm font-normal text-body">.net developer</div>
                                 </div>
                             </div>
                             <button>
                                 <div
-                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                    <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                    <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-blue-800 p-2">
+                                    <h1 class="text-sm font-semibold text-blue-800">Follow</h1>
+                                    <i class="fa-solid fa-plus text-sm text-blue-800"></i>
                                 </div>
                             </button>
                         </div>
                         <!-- card end -->
-                         <!-- card bdgin -->
+                        <!-- card bdgin -->
                         <div class="flex justify-between items-center rounded-lg  w-full p-4 ">
-                            <div class="flex justify-start items-center gap-2 w-full">
-                                <a href=""><img src="src/Abood.png" alt=""
-                                        class="rounded-full w-14 border-2 border-indigo-950"></a>
-                                <div class="flex flex-col justify-center items-center text-left ">
-                                    <p class="text-indigo-950 font-bold  text-lg">Abdalrahman baker</p>
-                                    <p class="text-gray-600">.Net develober</p>
+                            <div class="flex items-center gap-2.5">
+                                <img class="w-12 h-12 rounded-full" src="src/Abood.png"
+                                    alt="">
+                                <div class="font-medium text-heading">
+                                    <div>Abdalrahman baker</div>
+                                    <div class="text-sm font-normal text-body">.net developer</div>
                                 </div>
                             </div>
                             <button>
                                 <div
-                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                    <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                    <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-blue-800 p-2">
+                                    <h1 class="text-sm font-semibold text-blue-800">Follow</h1>
+                                    <i class="fa-solid fa-plus text-sm text-blue-800"></i>
                                 </div>
                             </button>
                         </div>
                         <!-- card end -->
-                         
                     </div>
                     <!-- people suggested (end) -->
                 </div>
 
 
                 <div class=" bg-white rounded-md border-gray-600 shadow-md shadow-gray-600 py-4">
-                <!-- company suggested (begin) -->
-                <div class="flex flex-col justify-center items-center mt-4 gap-5 w-full">
-                    <h1 class="text-2xl font-bold text-indigo-950">Suggested Company</h1>
+                    <!-- company suggested (begin) -->
+                    <div class="flex flex-col justify-center items-center mt-4 gap-5 w-full">
+                        <h1 class="text-2xl font-bold text-blue-800">Suggested Company</h1>
 
-                    <!-- card bdgin -->
+                        <!-- card bdgin -->
                         <div class="flex justify-between items-center rounded-lg  w-full p-4 ">
-                            <div class="flex justify-start items-center gap-2 w-full">
-                                <a href=""><img src="src/Abood.png" alt=""
-                                        class="rounded-full w-14 border-2 border-indigo-950"></a>
-                                <div class="flex flex-col justify-center items-center text-left ">
-                                    <p class="text-indigo-950 font-bold  text-lg">Abdalrahman baker</p>
-                                    <p class="text-gray-600">.Net develober</p>
+                            <div class="flex items-center gap-2.5">
+                                <img class="w-12 h-12 rounded-full" src="src/Abood.png"
+                                    alt="">
+                                <div class="font-medium text-heading">
+                                    <div>Abdalrahman baker</div>
+                                    <div class="text-sm font-normal text-body">.net developer</div>
                                 </div>
                             </div>
                             <button>
                                 <div
-                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-indigo-950 p-2">
-                                    <h1 class="text-sm font-semibold text-indigo-950">Follow</h1>
-                                    <i class="fa-solid fa-plus text-sm text-indigo-950"></i>
+                                    class="flex justify-center items-center gap-2 rounded-full border-2 border-blue-800 p-2">
+                                    <h1 class="text-sm font-semibold text-blue-800">Follow</h1>
+                                    <i class="fa-solid fa-plus text-sm text-blue-800"></i>
                                 </div>
                             </button>
                         </div>
                         <!-- card end -->
+                    </div>
+                    <!-- company suggested (end) -->
                 </div>
-                <!-- company suggested (end) -->
-                 </div>
 
 
 
